@@ -24,6 +24,9 @@ export const Faq = () => {
   return (
     <section className="py-16">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl">
+        <h2 className="text-3xl md:text-4xl font-bold text-primary text-center mb-12">
+          Frequently Asked Questions
+        </h2>
         <Accordion type="single" collapsible className="w-full space-y-3">
           {faqs.map((faq, index) => (
             <AccordionItem key={index} value={`item-${index}`} className="bg-secondary rounded-lg border-none">

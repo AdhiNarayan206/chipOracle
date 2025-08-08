@@ -28,7 +28,7 @@ export const Features = () => {
               <div className="w-48 h-48 bg-secondary rounded-2xl flex items-center justify-center mb-6 overflow-hidden">
                 {feature.icon}
               </div>
-              <h3 className="text-xl font-bold">{feature.title}</h3>
+              <h3 className="text-xl font-bold text-primary">{feature.title}</h3>
               <p className="mt-2 text-gray-500 max-w-xs mx-auto">{feature.description}</p>
             </div>
           ))}

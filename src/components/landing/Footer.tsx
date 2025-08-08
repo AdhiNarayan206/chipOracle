@@ -11,7 +11,7 @@ export const Footer = () => {
         </div>
         <div className="flex flex-col sm:flex-row gap-8 sm:gap-24">
           <div>
-            <h4 className="font-bold mb-4 text-sm">About</h4>
+            <h4 className="font-bold mb-4 text-sm text-primary">About</h4>
             <ul className="space-y-3">
               <li><a href="#" className="text-sm text-gray-500 hover:text-gray-900">Team</a></li>
               <li><a href="#" className="text-sm text-gray-500 hover:text-gray-900">Privacy</a></li>
@@ -19,7 +19,7 @@ export const Footer = () => {
             </ul>
           </div>
           <div>
-            <h4 className="font-bold mb-4 text-sm">Contact</h4>
+            <h4 className="font-bold mb-4 text-sm text-primary">Contact</h4>
             <ul className="space-y-3">
               <li><a href="#" className="text-sm text-gray-500 hover:text-gray-900">Support</a></li>
               <li><a href="#" className="text-sm text-gray-500 hover:text-gray-900">Email</a></li>
