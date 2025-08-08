@@ -8,7 +8,7 @@ export const Hero = () => {
           Upload a packet, get trolled.
         </h1>
         <h2 className="text-4xl md:text-5xl font-bold mt-2">
-          Count Your Lays.
+          Count Your Chips.
         </h2>
         <div className="mt-12 mx-auto max-w-3xl h-96 bg-gray-100 rounded-2xl flex items-center justify-center">
           <div className="flex items-center gap-8 text-gray-300">

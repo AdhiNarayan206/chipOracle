@@ -4,7 +4,7 @@ const features = [
   {
     icon: <Square size={48} strokeWidth={1} className="text-gray-400" />,
     title: "Snap & Upload",
-    description: "Take a photo of your Lays chips packet, and upload it in seconds.",
+    description: "Take a photo of your chips packet, and upload it in seconds.",
   },
   {
     icon: <Circle size={48} strokeWidth={1} className="text-gray-400" />,
