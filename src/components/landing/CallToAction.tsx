@@ -24,7 +24,7 @@ export const CallToAction = () => {
   return (
     <section id="upload" className="py-24 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="text-4xl md:text-5xl font-bold">
+        <h2 className="text-4xl md:text-5xl font-bold text-primary">
           Upload. Predict. Laugh.
         </h2>
         <p className="mt-4 max-w-2xl mx-auto text-lg text-gray-500">
