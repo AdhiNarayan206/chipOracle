@@ -1,5 +1,3 @@
-import { Square, Circle, Triangle } from "lucide-react";
-
 export const Hero = () => {
   return (
     <section className="text-center py-20">
@@ -10,12 +8,8 @@ export const Hero = () => {
         <h2 className="text-4xl md:text-5xl font-bold mt-2">
           Count Your Chips.
         </h2>
-        <div className="mt-12 mx-auto max-w-3xl h-96 bg-gray-100 rounded-2xl flex items-center justify-center">
-          <div className="flex items-center gap-8 text-gray-300">
-            <Square size={64} strokeWidth={1} />
-            <Circle size={64} strokeWidth={1} />
-            <Triangle size={64} strokeWidth={1} />
-          </div>
+        <div className="mt-12 mx-auto max-w-3xl h-auto bg-gray-100 rounded-2xl flex items-center justify-center overflow-hidden">
+          <img src="/hero-image.jpg" alt="Lays Chip Counter" className="w-full h-full object-contain" />
         </div>
       </div>
     </section>
