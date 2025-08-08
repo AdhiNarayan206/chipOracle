@@ -1,15 +1,13 @@
-import { Triangle } from "lucide-react";
-import snapUploadImg from "@/assets/snap-upload.jpg";
-import aiChipCountImg from "@/assets/ai-chip-count.jpeg";
+import { Circle, Triangle } from "lucide-react";
 
 const features = [
   {
-    icon: <img src={snapUploadImg} alt="Snap and Upload" className="w-full h-full object-cover rounded-2xl" />,
+    icon: <img src="/snap-upload.jpg" alt="Snap and Upload" className="w-full h-full object-cover rounded-2xl" />,
     title: "Snap & Upload",
     description: "Take a photo of your chips packet, and upload it in seconds.",
   },
   {
-    icon: <img src={aiChipCountImg} alt="AI Chip Count" className="w-full h-full object-cover rounded-2xl" />,
+    icon: <img src="/ai-chip-count.jpeg" alt="AI Chip Count" className="w-full h-full object-cover rounded-2xl" />,
     title: "AI Chip Count",
     description: "See how many chips you actually got (or didn't).",
   },
