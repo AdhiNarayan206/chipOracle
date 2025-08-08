@@ -1,8 +1,8 @@
-import { Square, Circle, Triangle } from "lucide-react";
+import { Circle, Triangle } from "lucide-react";
 
 const features = [
   {
-    icon: <Square size={48} strokeWidth={1} className="text-gray-400" />,
+    icon: <img src="/snap-upload.jpg" alt="Snap and Upload" className="w-full h-full object-cover rounded-2xl" />,
     title: "Snap & Upload",
     description: "Take a photo of your chips packet, and upload it in seconds.",
   },
