@@ -10,8 +10,8 @@ const features = [
     description: "See how many chips you actually got (or didn't).",
   },
   {
-    icon: <img src="/get-trolled.jpeg" alt="Get Trolled" className="w-full h-full object-cover rounded-2xl" />,
-    title: "Get Trolled.",
+    icon: <img src="/get-trolled.jpeg" alt="See Your Results" className="w-full h-full object-cover rounded-2xl" />,
+    title: "See Your Results",
     description: "Our bot roasts your count—whether you're lucky or chip-less.",
   },
 ];
