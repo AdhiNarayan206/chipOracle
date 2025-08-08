@@ -1,8 +1,6 @@
-import { FilePenLine } from "lucide-react";
-
 const features = [
   {
-    icon: <FilePenLine className="w-24 h-24 text-primary" />,
+    icon: <img src="/enter-details.jpg" alt="Enter Your Details" className="w-full h-full object-cover rounded-2xl" />,
     title: "Enter Your Details",
     description: "Input your packet's flavour and weight. Quick and easy!",
   },
