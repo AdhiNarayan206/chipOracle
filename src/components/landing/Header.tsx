@@ -15,7 +15,7 @@ export const Header = () => {
                 </div>
                 <div className="flex-1 flex justify-start">
                     <nav className="hidden sm:flex sm:items-center pl-8">
-                        <a href="#upload" className="px-3 py-2 text-sm font-medium text-gray-500 hover:text-primary">Upload</a>
+                        <a href="#predict" className="px-3 py-2 text-sm font-medium text-gray-500 hover:text-primary">Predict</a>
                     </nav>
                 </div>
             </div>

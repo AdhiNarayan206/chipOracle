@@ -22,10 +22,10 @@ export const CallToAction = () => {
   };
 
   return (
-    <section id="upload" className="py-24 bg-background">
+    <section id="predict" className="py-24 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-4xl md:text-5xl font-bold text-primary">
-          Upload. Predict. Laugh.
+          Predict. Discover. Share.
         </h2>
         <p className="mt-4 max-w-2xl mx-auto text-lg text-gray-500">
           Share your chip count, challenge friends, and see who gets roasted the hardest.
@@ -56,7 +56,7 @@ export const CallToAction = () => {
             </div>
           </div>
           <Button type="submit" size="lg" className="rounded-full px-8 h-12 text-base w-full sm:w-auto">
-            Upload Now
+            Predict Now
           </Button>
         </form>
       </div>
