@@ -13,17 +13,17 @@ export const Footer = () => {
           <div>
             <h4 className="font-bold mb-4 text-sm text-primary">About</h4>
             <ul className="space-y-3">
-              <li><a href="#" className="text-sm text-gray-500 hover:text-gray-900">Team</a></li>
-              <li><a href="#" className="text-sm text-gray-500 hover:text-gray-900">Privacy</a></li>
-              <li><a href="#" className="text-sm text-gray-500 hover:text-gray-900">Terms</a></li>
+              <li><a href="#" className="text-sm text-gray-500 hover:text-primary">Team</a></li>
+              <li><a href="#" className="text-sm text-gray-500 hover:text-primary">Privacy</a></li>
+              <li><a href="#" className="text-sm text-gray-500 hover:text-primary">Terms</a></li>
             </ul>
           </div>
           <div>
             <h4 className="font-bold mb-4 text-sm text-primary">Contact</h4>
             <ul className="space-y-3">
-              <li><a href="#" className="text-sm text-gray-500 hover:text-gray-900">Support</a></li>
-              <li><a href="#" className="text-sm text-gray-500 hover:text-gray-900">Email</a></li>
-              <li><a href="#" className="text-sm text-gray-500 hover:text-gray-900">Twitter</a></li>
+              <li><a href="#" className="text-sm text-gray-500 hover:text-primary">Support</a></li>
+              <li><a href="#" className="text-sm text-gray-500 hover:text-primary">Email</a></li>
+              <li><a href="#" className="text-sm text-gray-500 hover:text-primary">Twitter</a></li>
             </ul>
           </div>
         </div>
