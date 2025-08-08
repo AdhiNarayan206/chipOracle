@@ -12,7 +12,7 @@ const features = [
   {
     icon: <img src="/get-trolled.jpeg" alt="See Your Results" className="w-full h-full object-cover rounded-2xl" />,
     title: "See Your Results",
-    description: "Our bot roasts your count—whether you're lucky or chip-less.",
+    description: "Get your chip count estimate—compare with friends or the pack itself!",
   },
 ];
 
