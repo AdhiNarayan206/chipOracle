@@ -28,7 +28,7 @@ export const CallToAction = () => {
           Predict. Discover. Share.
         </h2>
         <p className="mt-4 max-w-2xl mx-auto text-lg text-gray-500">
-          Share your chip count, challenge friends, and see who gets roasted the hardest.
+          Find out how many chips are likely in your pack—powered by AI. Share results with friends and see whose snack is packed fuller
         </p>
         <form onSubmit={handleSubmit} className="mt-8 max-w-lg mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
