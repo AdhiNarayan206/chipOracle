@@ -1,10 +1,10 @@
-import { Circle, Triangle } from "lucide-react";
+import { FilePenLine } from "lucide-react";
 
 const features = [
   {
-    icon: <img src="/snap-upload.jpg" alt="Snap and Upload" className="w-full h-full object-cover rounded-2xl" />,
-    title: "Snap & Upload",
-    description: "Take a photo of your chips packet, and upload it in seconds.",
+    icon: <FilePenLine className="w-24 h-24 text-primary" />,
+    title: "Enter Your Details",
+    description: "Input your packet's flavour and weight. Quick and easy!",
   },
   {
     icon: <img src="/ai-chip-count.jpeg" alt="AI Chip Count" className="w-full h-full object-cover rounded-2xl" />,
