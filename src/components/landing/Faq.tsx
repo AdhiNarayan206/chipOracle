@@ -11,10 +11,6 @@ const faqs = [
     answer: "Our AI is highly accurate, but sometimes it likes to have a little fun. Consider it part of the trolling experience.",
   },
   {
-    question: "Will my photo be shared?",
-    answer: "We respect your privacy. Your photos are only used for the chip count and are not shared publicly without your permission.",
-  },
-  {
     question: "What if I get zero chips?",
     answer: "Then you've been officially trolled by the universe (and us). Share your result for maximum sympathy... or laughs.",
   },
