@@ -25,7 +25,7 @@ export const Features = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
           {features.map((feature, index) => (
             <div key={index} className="flex flex-col items-center">
-              <div className="w-48 h-48 bg-gray-100 rounded-2xl flex items-center justify-center mb-6 overflow-hidden">
+              <div className="w-48 h-48 bg-secondary rounded-2xl flex items-center justify-center mb-6 overflow-hidden">
                 {feature.icon}
               </div>
               <h3 className="text-xl font-bold">{feature.title}</h3>

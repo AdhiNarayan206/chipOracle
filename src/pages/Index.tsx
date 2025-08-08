@@ -7,7 +7,7 @@ import { Footer } from "@/components/landing/Footer";
 
 const Index = () => {
   return (
-    <div className="bg-white text-gray-800">
+    <div className="bg-background text-foreground">
       <Header />
       <main>
         <Hero />

@@ -8,7 +8,7 @@ export const Hero = () => {
         <h2 className="text-4xl md:text-5xl font-bold mt-2">
           Count Your Chips.
         </h2>
-        <div className="mt-12 mx-auto max-w-3xl h-auto bg-gray-100 rounded-2xl flex items-center justify-center overflow-hidden">
+        <div className="mt-12 mx-auto max-w-3xl h-auto bg-secondary rounded-2xl flex items-center justify-center overflow-hidden">
           <img src="/hero-image.jpg" alt="Lays Chip Counter" className="w-full h-full object-contain" />
         </div>
       </div>
