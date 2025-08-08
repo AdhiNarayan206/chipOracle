@@ -5,7 +5,7 @@ export const Hero = () => {
         <h1 className="text-4xl md:text-5xl font-medium text-gray-600">
           Upload a packet, get trolled.
         </h1>
-        <h2 className="text-4xl md:text-5xl font-bold mt-2">
+        <h2 className="text-4xl md:text-5xl font-bold mt-2 text-primary">
           Count Your Chips.
         </h2>
         <div className="mt-12 mx-auto max-w-3xl h-auto bg-secondary rounded-2xl flex items-center justify-center overflow-hidden">
