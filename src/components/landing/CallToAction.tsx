@@ -4,6 +4,13 @@ import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 import { toast } from "sonner";
 import {
   Dialog,
@@ -13,6 +20,14 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
+
+const flavors = [
+  "Classic",
+  "Barbecue",
+  "Hot and Sweet Chili",
+  "Masala",
+  "Tangy Tomato",
+];
 
 export const CallToAction = () => {
   const [flavour, setFlavour] = useState("");
@@ -30,15 +45,37 @@ export const CallToAction = () => {
 
     setIsLoading(true);
 
-    // Simulate a delay for the backend call
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+    try {
+      const response = await fetch("http://127.0.0.1:5000/predict", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          flavor: flavour,
+          weight: parseInt(weight, 10),
+        }),
+      });
 
-    // Simulate a "backend" response. Let's make it fun.
-    const chipCount = Math.floor(Math.random() * 50) + 5; // Random number between 5 and 54
+      if (!response.ok) {
+        throw new Error("Prediction request failed. Is the server running?");
+      }
 
-    setPrediction(chipCount);
-    setIsLoading(false);
-    setIsDialogOpen(true);
+      const data = await response.json();
+      
+      if (data.error) {
+        throw new Error(data.error);
+      }
+
+      setPrediction(data.predicted_chips);
+      setIsDialogOpen(true);
+
+    } catch (error) {
+      console.error("Prediction error:", error);
+      toast.error(error instanceof Error ? error.message : "An unknown error occurred.");
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
@@ -55,15 +92,18 @@ export const CallToAction = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
               <div className="space-y-2 text-left">
                 <Label htmlFor="flavour">Flavour</Label>
-                <Input
-                  id="flavour"
-                  type="text"
-                  placeholder="e.g., Salt & Vinegar"
-                  value={flavour}
-                  onChange={(e) => setFlavour(e.target.value)}
-                  required
-                  disabled={isLoading}
-                />
+                <Select onValueChange={setFlavour} value={flavour} disabled={isLoading}>
+                  <SelectTrigger>
+                    <SelectValue placeholder="Select a flavour" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    {flavors.map((f) => (
+                      <SelectItem key={f} value={f}>
+                        {f}
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
               </div>
               <div className="space-y-2 text-left">
                 <Label htmlFor="weight">Weight (grams)</Label>
@@ -97,8 +137,7 @@ export const CallToAction = () => {
               Your Chip Oracle Result
             </DialogTitle>
             <DialogDescription>
-              The AI has spoken! Here's the (totally serious) chip count for
-              your pack.
+              The AI has spoken! Here's the chip count for your pack.
             </DialogDescription>
           </DialogHeader>
           <div className="py-4 text-center">
