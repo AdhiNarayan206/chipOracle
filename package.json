@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "concurrently -k \"npm:dev:frontend\" \"npm:dev:backend\"",
     "dev:frontend": "vite",
-    "dev:backend": "pip install -r backend/requirements.txt && python3 backend/app.py"
+    "dev:backend": "pip install -r backend/requirements.txt && python3 backend/app.py",
+    "build": "tsc && vite build"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
