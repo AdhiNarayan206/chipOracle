@@ -1,13 +1,11 @@
 {
-  "name": "dyad-generated-app",
+  "name": "chip-oracle-app",
+  "version": "1.0.0",
   "private": true,
-  "version": "0.0.0",
-  "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "dev": "concurrently -k \"npm:dev:frontend\" \"npm:dev:backend\"",
+    "dev:frontend": "vite",
+    "dev:backend": "pip install -r backend/requirements.txt && python3 backend/app.py"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
