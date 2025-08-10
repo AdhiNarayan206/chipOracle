@@ -1,0 +1,37 @@
+const features = [
+  {
+    icon: <img src="/enter-details.jpg" alt="Enter Your Details" className="w-full h-full object-cover rounded-2xl" />,
+    title: "Enter Your Details",
+    description: "Input your packet's flavour and weight. Quick and easy!",
+  },
+  {
+    icon: <img src="/ai-chip-count.jpeg" alt="AI Chip Count" className="w-full h-full object-cover rounded-2xl" />,
+    title: "AI Chip Count",
+    description: "See how many chips you actually got (or didn't).",
+  },
+  {
+    icon: <img src="/get-trolled.jpeg" alt="See Your Results" className="w-full h-full object-cover rounded-2xl" />,
+    title: "See Your Results",
+    description: "Get your chip count estimate—compare with friends or the pack itself!",
+  },
+];
+
+export const Features = () => {
+  return (
+    <section id="features" className="py-16">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+          {features.map((feature, index) => (
+            <div key={index} className="flex flex-col items-center">
+              <div className="w-48 h-48 bg-secondary rounded-2xl flex items-center justify-center mb-6 overflow-hidden">
+                {feature.icon}
+              </div>
+              <h3 className="text-xl font-bold text-primary">{feature.title}</h3>
+              <p className="mt-2 text-gray-500 max-w-xs mx-auto">{feature.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
