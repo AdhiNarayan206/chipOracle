@@ -1,6 +1,3 @@
-import { Button } from "@/components/ui/button";
-import { MadeWithDyad } from "@/components/made-with-dyad";
-
 const Index = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen p-4 text-center">
@@ -11,10 +8,9 @@ const Index = () => {
         <p className="max-w-[600px] text-muted-foreground md:text-xl">
           This is your starting point. Let's build something amazing together.
         </p>
-        <Button>Get Started</Button>
-      </div>
-      <div className="absolute bottom-4">
-        <MadeWithDyad />
+        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+          Get Started
+        </button>
       </div>
     </div>
   );
